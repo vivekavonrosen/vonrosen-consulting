@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-lato), sans-serif;
+  background-color: #fff;
+  color: #1a1a1a;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-bebas-neue), sans-serif;
+}
+
+/* Thin gold divider line utility */
+.gold-line {
+  display: block;
+  width: 4rem;
+  height: 1px;
+  background-color: #DFB24A;
+  margin-bottom: 2rem;
+}
+
+/* Subtle entrance animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.7s ease forwards;
+}
+
+.animate-fade-up-delay {
+  animation: fadeUp 0.7s ease 0.2s forwards;
+  opacity: 0;
+}
+
+.animate-fade-up-delay-2 {
+  animation: fadeUp 0.7s ease 0.4s forwards;
+  opacity: 0;
+}
