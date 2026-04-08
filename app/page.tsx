@@ -45,19 +45,14 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Right: photo placeholder */}
-          <div className="hidden lg:block relative">
-            <div className="relative h-[600px] w-full">
-              {/* Replace src with actual headshot */}
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="https://placehold.co/600x700/571F81/DFB24A?text=Photo+of+Viveka"
-                alt="Viveka von Rosen"
-                className="w-full h-full object-cover object-top"
-              />
-              {/* Gold frame accent */}
-              <div className="absolute -bottom-4 -right-4 w-full h-full border border-[#DFB24A]/30 -z-10" />
-            </div>
+          {/* Right: transparent hero image floated over gradient */}
+          <div className="hidden lg:flex items-end justify-center relative">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/viveka-hero.png"
+              alt="Viveka von Rosen"
+              className="relative z-10 w-full max-w-[520px] object-contain drop-shadow-2xl"
+            />
           </div>
         </div>
 
@@ -334,22 +329,21 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white p-10 border-l-4 border-[#DFB24A]">
               <p className="text-gray-700 text-lg leading-relaxed mb-8 italic">
-                &ldquo;Viveka is my secret weapon for using LinkedIn to generate leads. I have taken every class she has offered and applied what I learned. As a result, I have sold over $100k of consulting business via LinkedIn over the last few years. She always knows what the latest trends are, and has graciously continued to advise me.&rdquo;
+                &ldquo;Working with Viveka has been the best decision I&apos;ve made all year — possibly in the past five years. Her coaching has given me clarity, confidence, and a renewed sense of purpose. Viveka has that rare combination of wisdom, intuition, and strategic brilliance that helps you see both the big picture and the practical next step.&rdquo;
               </p>
               <div>
-                <p className="font-bold text-[#571F81]">Diane Valenti</p>
-                <p className="text-gray-500 text-sm">Transformational Learning and Process Consultant</p>
+                <p className="font-bold text-[#571F81]">Lori Gama</p>
+                <p className="text-gray-500 text-sm">Founder and President, DaGama Digital Marketing Agency</p>
               </div>
             </div>
 
-            {/* Placeholder for second testimonial — swap with real one */}
             <div className="bg-white p-10 border-l-4 border-[#DFB24A]">
               <p className="text-gray-700 text-lg leading-relaxed mb-8 italic">
-                &ldquo;Working with Viveka gave me clarity I hadn&apos;t been able to find in two years of trying to figure this out on my own. She saw exactly what I was building before I did. Within 90 days I had a clear direction, a stronger LinkedIn presence, and momentum I could feel.&rdquo;
+                &ldquo;She is clearly a cutting edge expert in an increasingly valuable marketing tool. Her abilities are beyond just the tactical aspects. She has a keen eye for helping you build a brand strategy that will make a lasting impact on your business.&rdquo;
               </p>
               <div>
-                <p className="font-bold text-[#571F81]">[Add Client Name]</p>
-                <p className="text-gray-500 text-sm">[Title, Company or Role]</p>
+                <p className="font-bold text-[#571F81]">David Bishop</p>
+                <p className="text-gray-500 text-sm">Chairman of the Board, Parrot Analytics</p>
               </div>
             </div>
           </div>

@@ -29,9 +29,9 @@ export default function AboutPage() {
             {/* Replace with actual headshot */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="https://placehold.co/580x680/571F81/DFB24A?text=Viveka+von+Rosen"
+              src="/viveka-portrait.jpg"
               alt="Viveka von Rosen"
-              className="w-full object-cover object-top"
+              className="w-full object-cover object-center"
             />
             <div className="absolute -bottom-4 -right-4 w-full h-full border border-[#DFB24A]/30 -z-10" />
           </div>

@@ -11,41 +11,53 @@ export default function ContactPage() {
 
     const form = e.currentTarget;
     const data = new FormData(form);
+    data.append("access_key", "7625335a-6989-44cf-90fa-a76cc1dbad02");
+    data.append("subject", "New Coaching Application — Von Rosen Consulting");
+    data.append("from_name", "Von Rosen Consulting Website");
 
-    // ── Formspree integration ──
-    // 1. Go to formspree.io and create a free form
-    // 2. Replace YOUR_FORM_ID below with your actual Formspree endpoint
-    // 3. Remove the setTimeout simulation below and uncomment the fetch block
-
-    // const res = await fetch("https://formspree.io/f/YOUR_FORM_ID", {
-    //   method: "POST",
-    //   body: data,
-    //   headers: { Accept: "application/json" },
-    // });
-    // if (res.ok) setSubmitted(true);
-
-    // Simulated success for now — remove when Formspree is wired up
-    await new Promise((r) => setTimeout(r, 1000));
-    console.log("Form data:", Object.fromEntries(data));
-    setSubmitted(true);
-    setLoading(false);
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: data,
+      });
+      const json = await res.json();
+      if (json.success) {
+        setSubmitted(true);
+      } else {
+        alert("Something went wrong. Please try again or email viveka@beyondthedreamboard.com directly.");
+      }
+    } catch {
+      alert("Something went wrong. Please try again or email viveka@beyondthedreamboard.com directly.");
+    } finally {
+      setLoading(false);
+    }
   }
 
   return (
     <div className="font-body">
 
       {/* ─── HERO ─── */}
-      <section className="relative bg-gradient-to-br from-[#0d0420] via-[#1a0a2e] to-[#2a0e4a] pt-40 pb-24 px-6 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-[#0d0420] via-[#1a0a2e] to-[#2a0e4a] pt-32 pb-0 px-6 overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_70%,#571F81_0%,transparent_55%)] opacity-50" />
-        <div className="relative max-w-3xl mx-auto text-center">
-          <span className="font-heading text-[#DFB24A] text-lg tracking-[0.4em] mb-6 block">PRIVATE COACHING</span>
-          <h1 className="font-heading text-white text-6xl md:text-8xl leading-none mb-6">
-            APPLY FOR<br />
-            <span className="text-[#DFB24A]">COACHING.</span>
-          </h1>
-          <p className="text-white/70 text-xl leading-relaxed">
-            Viveka works with a small number of clients at any given time. Fill out the form below and she&apos;ll be in touch within 48 hours.
-          </p>
+        <div className="relative max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-end">
+          <div className="pb-24 pt-8">
+            <span className="font-heading text-[#DFB24A] text-lg tracking-[0.4em] mb-6 block">PRIVATE COACHING</span>
+            <h1 className="font-heading text-white text-6xl md:text-8xl leading-none mb-6">
+              APPLY FOR<br />
+              <span className="text-[#DFB24A]">COACHING.</span>
+            </h1>
+            <p className="text-white/70 text-xl leading-relaxed">
+              Viveka works with a small number of clients at any given time. Fill out the form below and she&apos;ll be in touch within 48 hours.
+            </p>
+          </div>
+          <div className="hidden lg:flex items-end justify-center">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/viveka-contact.png"
+              alt="Viveka von Rosen"
+              className="w-full max-w-[420px] object-contain"
+            />
+          </div>
         </div>
       </section>
 

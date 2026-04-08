@@ -80,7 +80,7 @@ export default function SpeakingPage() {
             {/* Replace with actual speaking/stage photo */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="https://placehold.co/600x700/1a0a2e/DFB24A?text=Viveka+on+Stage"
+              src="/viveka-speaking.jpg"
               alt="Viveka von Rosen speaking"
               className="w-full object-cover"
             />
@@ -153,23 +153,55 @@ export default function SpeakingPage() {
           <h2 className="font-heading text-[#571F81] text-5xl md:text-6xl mb-16 leading-none">
             WHAT AUDIENCES SAY.
           </h2>
-          <div className="grid md:grid-cols-2 gap-8">
+
+          {/* Featured testimonial — full width */}
+          <div className="bg-gray-50 p-10 border-l-4 border-[#DFB24A] mb-8">
+            <p className="text-gray-700 text-lg leading-relaxed mb-8 italic">
+              &ldquo;Viveka spoke numerous times for us at Social Media Marketing World and I&apos;ve seen her speak at several other events. She is the consummate professional — always prepared, eager to adapt, and focused on serving the community. When Viveka shows up for your event, she participates fully. She doesn&apos;t do the &lsquo;run and gun&rsquo; approach where people fly in last minute, give their talk, and leave immediately. She comes early and stays late. She&apos;s like an extension of your team.&rdquo;
+            </p>
+            <div>
+              <p className="font-bold text-[#571F81]">Phil Mershon</p>
+              <p className="text-gray-500 text-sm">Director of Experience, Social Media Examiner &amp; Social Media Marketing World</p>
+            </div>
+          </div>
+
+          {/* 2-column grid */}
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div className="bg-gray-50 p-10 border-l-4 border-[#DFB24A]">
               <p className="text-gray-700 text-lg leading-relaxed mb-8 italic">
-                &ldquo;[Add speaking testimonial here — audience member, event organizer, or conference planner quote.]&rdquo;
+                &ldquo;I&apos;ve known Viveka for years, and I finally convinced her to speak at my Agents of Change Digital Marketing Conference. She was fantastic. Viveka actually presented twice — once at our pre-conference workshop which I attended. I thought I knew LinkedIn pretty well, but I couldn&apos;t even keep up with all the amazing ideas she shared. I took pages of notes. I also couldn&apos;t help but notice how funny and engaging she was. Her breakout session got rave reviews. If you&apos;re looking for a keynote, breakout, or workshop, I can&apos;t say enough about Viveka.&rdquo;
               </p>
               <div>
-                <p className="font-bold text-[#571F81]">[Name]</p>
-                <p className="text-gray-500 text-sm">[Title, Organization]</p>
+                <p className="font-bold text-[#571F81]">Rich Brooks</p>
+                <p className="text-gray-500 text-sm">President, Flyte New Media &amp; Founder, Agents of Change</p>
               </div>
             </div>
+
             <div className="bg-gray-50 p-10 border-l-4 border-[#DFB24A]">
               <p className="text-gray-700 text-lg leading-relaxed mb-8 italic">
-                &ldquo;[Add second speaking testimonial here.]&rdquo;
+                &ldquo;Viveka brings an incomparable level of expertise and energy to everything she does. Each time I have had the pleasure of speaking with her or sitting in on a training I learn something new and immediately valuable. I had Viveka do a training for alumni of the Women in Sales Leadership Forum, and the kudos and appreciation for her knowledge and personalized efforts haven&apos;t stopped. She is a true guru with the passion and professionalism to back up the title.&rdquo;
               </p>
               <div>
-                <p className="font-bold text-[#571F81]">[Name]</p>
-                <p className="text-gray-500 text-sm">[Title, Organization]</p>
+                <p className="font-bold text-[#571F81]">Gina Stracuzzi</p>
+                <p className="text-gray-500 text-sm">Women in Sales Leadership Forum</p>
+              </div>
+            </div>
+
+            <div className="bg-gray-50 p-10 border-l-4 border-[#DFB24A]">
+              <p className="text-gray-700 text-lg leading-relaxed mb-8 italic">
+                &ldquo;Viveka delivered exceptional value and in-depth knowledge with elegance and humour! If you are looking for a keynote speaker… look no further!&rdquo;
+              </p>
+              <div>
+                <p className="font-bold text-[#571F81]">Kelly Baader</p>
+              </div>
+            </div>
+
+            <div className="bg-gray-50 p-10 border-l-4 border-[#DFB24A]">
+              <p className="text-gray-700 text-lg leading-relaxed mb-8 italic">
+                &ldquo;Viveka has the ability to take a complex idea and simplify it for immediate implementation. She is incredible.&rdquo;
+              </p>
+              <div>
+                <p className="font-bold text-[#571F81]">Neen James, CSP</p>
               </div>
             </div>
           </div>
