@@ -202,23 +202,46 @@ export default function LinkedInPage() {
           <h2 className="font-heading text-[#571F81] text-5xl md:text-6xl mb-16 leading-none">
             CLIENT RESULTS.
           </h2>
+
+          {/* Featured — full width */}
+          <div className="bg-gray-50 p-10 border-l-4 border-[#DFB24A] mb-8">
+            <p className="text-gray-700 text-lg leading-relaxed mb-8 italic">
+              &ldquo;Viveka is my secret weapon for using LinkedIn to generate leads. I have taken every class she has offered and applied what I learned. As a result, I have sold over $100k of consulting business via LinkedIn over the last few years. She always knows what the latest trends are, and has graciously continued to advise me. I can&apos;t thank her enough.&rdquo;
+            </p>
+            <div>
+              <p className="font-bold text-[#571F81]">Diane Valenti</p>
+              <p className="text-gray-500 text-sm">Transformational Learning and Process Consultant</p>
+            </div>
+          </div>
+
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-gray-50 p-10 border-l-4 border-[#DFB24A]">
               <p className="text-gray-700 text-lg leading-relaxed mb-8 italic">
-                &ldquo;Viveka is my secret weapon for using LinkedIn to generate leads. I have taken every class she has offered and applied what I learned. As a result, I have sold over $100k of consulting business via LinkedIn over the last few years. She always knows what the latest trends are, and has graciously continued to advise me. I can&apos;t thank her enough.&rdquo;
+                &ldquo;Viveka is highly articulate and always on the forefront of everything concerning LinkedIn, including every new feature as soon as it becomes available. Her value as a professional coach, speaker and adviser is outstanding in every way.&rdquo;
               </p>
               <div>
-                <p className="font-bold text-[#571F81]">Diane Valenti</p>
-                <p className="text-gray-500 text-sm">Transformational Learning and Process Consultant</p>
+                <p className="font-bold text-[#571F81]">John E. Burget</p>
+                <p className="text-gray-500 text-sm">President, Project Capital Strategies</p>
               </div>
             </div>
+
             <div className="bg-gray-50 p-10 border-l-4 border-[#DFB24A]">
               <p className="text-gray-700 text-lg leading-relaxed mb-8 italic">
-                &ldquo;[Add second LinkedIn testimonial here.]&rdquo;
+                &ldquo;One session with Viveka and I now really get it. She showed me so many things behind the scenes that I never knew existed and that only an insider would know.&rdquo;
               </p>
               <div>
-                <p className="font-bold text-[#571F81]">[Name]</p>
-                <p className="text-gray-500 text-sm">[Title]</p>
+                <p className="font-bold text-[#571F81]">Deberah Bringelson</p>
+                <p className="text-gray-500 text-sm">C-Suite Advisor / International Profit-Producing Authority</p>
+              </div>
+            </div>
+
+            <div className="bg-gray-50 p-10 border-l-4 border-[#DFB24A]">
+              <p className="text-gray-700 text-lg leading-relaxed mb-8 italic">
+                &ldquo;Hire her! She is incredible. Viveka has the ability to take a possibly complex idea and simplify it for immediate implementation.&rdquo;
+              </p>
+              <div>
+                <p className="font-bold text-[#571F81]">Neen James</p>
+                <p className="text-gray-500 text-sm">Keynote Speaker for Luxury and Legacy Brands</p>
               </div>
             </div>
           </div>
