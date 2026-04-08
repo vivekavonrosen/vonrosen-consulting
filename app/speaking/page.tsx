@@ -39,7 +39,7 @@ export default function SpeakingPage() {
       <section className="bg-[#571F81] py-10 px-6">
         <div className="max-w-7xl mx-auto flex flex-wrap justify-center gap-8 md:gap-16">
           {["FORBES", "FAST COMPANY", "MONEY MAGAZINE", "MIAMI HERALD", "DENVER POST"].map((pub) => (
-            <span key={pub} className="font-heading text-xl tracking-[0.3em] text-white/40">
+            <span key={pub} className="font-heading text-xl tracking-[0.3em] text-white/80">
               {pub}
             </span>
           ))}

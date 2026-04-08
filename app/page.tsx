@@ -296,7 +296,7 @@ export default function HomePage() {
           </p>
           <div className="flex flex-wrap justify-center gap-8 md:gap-16 mb-16">
             {["FORBES", "FAST COMPANY", "MONEY MAGAZINE", "MIAMI HERALD", "DENVER POST"].map((pub) => (
-              <span key={pub} className="font-heading text-xl md:text-2xl tracking-[0.3em] text-white/40">
+              <span key={pub} className="font-heading text-xl md:text-2xl tracking-[0.3em] text-white/80">
                 {pub}
               </span>
             ))}

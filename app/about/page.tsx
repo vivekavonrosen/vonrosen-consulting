@@ -113,10 +113,10 @@ export default function AboutPage() {
       {/* ─── MEDIA LOGOS ─── */}
       <section className="bg-white py-16 px-6">
         <div className="max-w-7xl mx-auto text-center">
-          <p className="font-heading text-gray-300 text-base tracking-[0.4em] mb-10">AS SEEN IN</p>
+          <p className="font-heading text-gray-600 text-base tracking-[0.4em] mb-10">AS SEEN IN</p>
           <div className="flex flex-wrap justify-center gap-8 md:gap-16">
             {["FORBES", "FAST COMPANY", "MONEY MAGAZINE", "MIAMI HERALD", "DENVER POST"].map((pub) => (
-              <span key={pub} className="font-heading text-2xl tracking-[0.3em] text-gray-200">
+              <span key={pub} className="font-heading text-2xl tracking-[0.3em] text-gray-600">
                 {pub}
               </span>
             ))}
